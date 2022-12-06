@@ -9,6 +9,8 @@ struct MobilePhone {
 int main() {
     int n;
     std::cin >> n;
+    /// переменная названа не правильно
+    /// camelCase vs under_score
     MobilePhone *SkyFall_list = new MobilePhone[n];
     for (int i = 0; i < n; i++) {
 
@@ -19,6 +21,7 @@ int main() {
     for (int s = 0; s < n; s++) {
         std::cout << "\t" << "MobilePhone id=" << '"' << s << '"' << " weight=" << '"' << SkyFall_list[s].weight<< '"' << " is_broken=" << '"' << std::boolalpha << SkyFall_list[s].is_broken << '"'<< " price=" << '"' << '"' << SkyFall_list[s].price << "\"/>" << std::endl;
     }
+    ///  не выполняет требованиям условия
     std::cout << "<MobilePhone>";
     std::cout << "<Mobile hone>";
     delete[] SkyFall_list;
